@@ -36,8 +36,7 @@ public class MascotaModel {
     @Column(name = "fecha_adopcion")
     private LocalDateTime fechaAdopcion;
 
-    // Muchas mascotas pueden pertenecer a un adoptante (null = aún sin adoptar)
-    @ManyToOne(fetch = FetchType.LAZY)
+    @ManyToOne
     @JoinColumn(name = "id_adoptante", referencedColumnName = "id_adoptante")
     private AdoptanteModel adoptante;
 

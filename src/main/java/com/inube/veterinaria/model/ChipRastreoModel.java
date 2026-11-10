@@ -24,8 +24,7 @@ public class ChipRastreoModel {
     @Column(name = "fabricante")
     private String fabricante;
 
-    // Relación 1 a 1: Una mascota solo puede tener un registro de chip aquí
-    @OneToOne(fetch = FetchType.LAZY)
+    @OneToOne
     @JoinColumn(name = "id_mascota", referencedColumnName = "id_mascota", nullable = false, unique = true)
     private MascotaModel mascota;
 
