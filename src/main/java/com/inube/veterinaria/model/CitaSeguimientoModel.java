@@ -15,8 +15,7 @@ public class CitaSeguimientoModel {
     @Column(name = "id_cita")
     private Integer idCita;
 
-    // Relación: Muchas citas pueden pertenecer a una sola Mascota
-    @ManyToOne(fetch = FetchType.LAZY)
+    @ManyToOne
     @JoinColumn(name = "id_mascota", referencedColumnName = "id_mascota", nullable = false)
     private MascotaModel mascota;
 
