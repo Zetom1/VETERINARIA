@@ -9,5 +9,5 @@ public class MascotaRequest {
     private String raza;
     private Integer edad;
     private String sexo;
-    private Integer idAdoptante; // opcional: solo si la mascota ya se registra adoptada
+    private Integer idAdoptante;
 }
